@@ -7,7 +7,7 @@
 
 import UIKit
 
-let urlString = "http://localhost:8080/api/v1/customers-wallets"
+let urlString = "https://using-the-api.herokuapp.com/api/v1/customers-wallets"
 
 class ViewController: UIViewController {
 
@@ -26,8 +26,15 @@ class ViewController: UIViewController {
         let dataTask = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error == nil && data != nil {
                 do {
-                    let customersList = try JSONDecoder().decode(CustomerWallets.self, from: data!)
-                    print(customersList)
+                    // Transforma o objeto json em objeto swift
+                    let academyStudents = try JSONDecoder().decode([AcademyStudents].self, from: data!)
+                    
+                    // studant é um objeto em swift
+                    for student in academyStudents {
+                        print("name: \(student.name)")
+                        print("ocuppation: \(student.occupation)")
+                        print("team: \(student.team)\n")
+                    }
                 }
                 catch let error{
                     print(error)
@@ -38,13 +45,9 @@ class ViewController: UIViewController {
         dataTask.resume()
     }
     
-    func post(id: String, name: String, occupation: String, state: String) {
-        let parameters = [
-            "id": id,
-            "name": name,
-            "occupation": occupation,
-            "state": state
-        ]
+    func post(id: String, name: String, occupation: String, team: String) {
+        
+        let newStudent = AcademyStudents.init(id: id, name: name, occupation: occupation, team: team)
         let url = URL(string: urlString)
         
         guard let requestUrl = url else { fatalError() }
@@ -52,41 +55,30 @@ class ViewController: UIViewController {
         var request = URLRequest(url: requestUrl)
         request.httpMethod = "POST"
         
-        do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
-        }
-        catch let error {
-            print(error)
-        }
+        guard let jsonData = try? JSONEncoder().encode(newStudent) else { return }
+        request.httpBody = jsonData
+        let json = String(data: jsonData, encoding: .utf8)
         
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-type")
         
         let dataTask = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
             guard error == nil else { return }
-            guard let data = data else { return }
+            guard data != nil else { return }
             
             do {
-                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String : String] {
-                    print(json)
-                }
+                let studentsData = try JSONEncoder().encode(json)
+                print(studentsData)
             }
             catch let error {
                 print(error)
             }
         }
         dataTask.resume()
-//        do {
-//            let jsonData = try JSONEncoder().encode(newCustomerWallet)
-//            request.httpBody = jsonData
-//        }
-//        catch {
-//            print(error)
-//        }
     }
 
     @IBAction func postNewItem(_ sender: Any) {
-        post(id: "141241413", name: "Vinícius", occupation: "Engenheiro de software", state: "PA")
+        post(id: "141241413", name: "Mari", occupation: "Mentor", team: "Mentores")
         fetch()
     }
 }

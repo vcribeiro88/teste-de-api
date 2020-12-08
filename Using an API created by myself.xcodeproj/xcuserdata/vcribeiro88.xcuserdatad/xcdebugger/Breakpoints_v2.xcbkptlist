@@ -14,9 +14,9 @@
             filePath = "Using an API created by myself/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "post(id:name:occupation:state:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "post(id:name:occupation:team:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,10 +30,74 @@
             filePath = "Using an API created by myself/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "postNewItem(_:)"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "post(id:name:occupation:team:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "095ED5D8-3A71-4110-8B3E-4ADC6F7F5712"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Using an API created by myself/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "post(id:name:occupation:team:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07D60206-BC50-4F4B-84B0-78B602BD873A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Using an API created by myself/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "post(id:name:occupation:team:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07D60206-BC50-4F4B-84B0-78B602BD873A - 7801823fc81f2576"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Using_an_API_created_by_myself.ViewController.post(id: Swift.String, name: Swift.String, occupation: Swift.String, team: Swift.String) -&gt; ()"
+                  moduleName = "Using an API created by myself"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcribeiro88/Desktop/Developer/Using%20an%20API%20created%20by%20myself/Using%20an%20API%20created%20by%20myself/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1334">
+               </Location>
+               <Location
+                  uuid = "07D60206-BC50-4F4B-84B0-78B602BD873A - 541861abe8ebcb1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Using_an_API_created_by_myself.ViewController.post(id: Swift.String, name: Swift.String, occupation: Swift.String, team: Swift.String) -&gt; ()"
+                  moduleName = "Using an API created by myself"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcribeiro88/Desktop/Developer/Using%20an%20API%20created%20by%20myself/Using%20an%20API%20created%20by%20myself/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "190">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
