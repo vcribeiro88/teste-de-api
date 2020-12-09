@@ -14,6 +14,9 @@
 		5EE1A8A425715623006A374D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1A8A325715623006A374D /* Assets.xcassets */; };
 		5EE1A8A725715623006A374D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1A8A525715623006A374D /* LaunchScreen.storyboard */; };
 		5EE1A8B0257156F4006A374D /* AcademyStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1A8AF257156F4006A374D /* AcademyStudents.swift */; };
+		AEAF02402580634000FEA77A /* StudentCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF023F2580634000FEA77A /* StudentCellTableViewCell.swift */; };
+		AEAF024325808CBA00FEA77A /* WebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF024225808CBA00FEA77A /* WebServiceTest.swift */; };
+		AECFB6EE25803C9800847D6A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECFB6ED25803C9800847D6A /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		5EE1A8A625715623006A374D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EE1A8A825715623006A374D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EE1A8AF257156F4006A374D /* AcademyStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyStudents.swift; sourceTree = "<group>"; };
+		AEAF023F2580634000FEA77A /* StudentCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCellTableViewCell.swift; sourceTree = "<group>"; };
+		AEAF024225808CBA00FEA77A /* WebServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceTest.swift; sourceTree = "<group>"; };
+		AECFB6ED25803C9800847D6A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,11 @@
 		5EE1A89925715621006A374D /* Using an API created by myself */ = {
 			isa = PBXGroup;
 			children = (
+				AEAF023E2580632300FEA77A /* Cell */,
+				AECFB6EC25803C8B00847D6A /* Service */,
+				AECFB6EB25803C7C00847D6A /* Controller */,
 				5EE1A89A25715621006A374D /* AppDelegate.swift */,
 				5EE1A89C25715621006A374D /* SceneDelegate.swift */,
-				5EE1A89E25715621006A374D /* ViewController.swift */,
 				5EE1A8AF257156F4006A374D /* AcademyStudents.swift */,
 				5EE1A8A025715621006A374D /* Main.storyboard */,
 				5EE1A8A325715623006A374D /* Assets.xcassets */,
@@ -68,6 +76,31 @@
 				5EE1A8A825715623006A374D /* Info.plist */,
 			);
 			path = "Using an API created by myself";
+			sourceTree = "<group>";
+		};
+		AEAF023E2580632300FEA77A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AEAF023F2580634000FEA77A /* StudentCellTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AECFB6EB25803C7C00847D6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5EE1A89E25715621006A374D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AECFB6EC25803C8B00847D6A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AECFB6ED25803C9800847D6A /* WebService.swift */,
+				AEAF024225808CBA00FEA77A /* WebServiceTest.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +176,9 @@
 				5EE1A89F25715621006A374D /* ViewController.swift in Sources */,
 				5EE1A89B25715621006A374D /* AppDelegate.swift in Sources */,
 				5EE1A8B0257156F4006A374D /* AcademyStudents.swift in Sources */,
+				AEAF02402580634000FEA77A /* StudentCellTableViewCell.swift in Sources */,
+				AECFB6EE25803C9800847D6A /* WebService.swift in Sources */,
+				AEAF024325808CBA00FEA77A /* WebServiceTest.swift in Sources */,
 				5EE1A89D25715621006A374D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
