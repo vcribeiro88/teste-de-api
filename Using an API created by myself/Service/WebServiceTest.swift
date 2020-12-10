@@ -12,11 +12,8 @@ class WebServiceTest {
     var session : URLSession!
     let url = URL(string: "https://using-the-api.herokuapp.com/api/v1/customers-wallets")!
     
-    
-
     init() {
         // Inicialize aqui uma sessão (básica) com propriedade Shared da classe URLSession
-        
     }
     
     //MARK: Agora você vai criar o escopo da função GET
@@ -41,9 +38,6 @@ class WebServiceTest {
         // Sobre a contante "dataTask: -> lembre-se que toda task inicia no estado suspended, para mudar para o estado running chamamos a função resume()
     }
     
-    
-    
-   
     // Aqui você cria o escopo da função "POST"
     // a função post() recebe um estudante para ser enviado ao servidor e uma closure que vai ser executada assim que se obtiver a resposta do servidor
     func post(newStudent : AcademyStudents, completion: @escaping (Bool) -> Void) {
@@ -61,9 +55,6 @@ class WebServiceTest {
         /* -> Transforme nosso objeto swift para um objeto do tipo JSON
          Obs.: Lembre-se que a codificação pode jogar um erro, portanto use guard let ou do/catch para pegar e tratar o erro
          */
-        
-        
-        
         
         /*
         ->Crie uma constante "uploadTask" e inicie chamando a função .uploadTask do objeto da session

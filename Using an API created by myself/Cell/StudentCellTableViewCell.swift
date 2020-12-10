@@ -23,7 +23,7 @@ class StudentCellTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCell(data : AcademyStudents) {
+    func setCell(data : AcademyStudentLiveCode) {
         self.nameLabel.text = data.name
         self.occupationLabel.text = data.occupation
     }
