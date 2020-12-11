@@ -15,7 +15,6 @@
 		5EE1A8A725715623006A374D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE1A8A525715623006A374D /* LaunchScreen.storyboard */; };
 		5EE1A8B0257156F4006A374D /* AcademyStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE1A8AF257156F4006A374D /* AcademyStudents.swift */; };
 		AE05E03A258264000076E702 /* WebServiceLiveCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05E039258264000076E702 /* WebServiceLiveCode.swift */; };
-		AE05E03E25826AE70076E702 /* AcademyStudentLiveCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05E03D25826AE70076E702 /* AcademyStudentLiveCode.swift */; };
 		AEAF02402580634000FEA77A /* StudentCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF023F2580634000FEA77A /* StudentCellTableViewCell.swift */; };
 		AEAF024325808CBA00FEA77A /* WebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF024225808CBA00FEA77A /* WebServiceTest.swift */; };
 		AECFB6EE25803C9800847D6A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECFB6ED25803C9800847D6A /* WebService.swift */; };
@@ -32,7 +31,6 @@
 		5EE1A8A825715623006A374D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EE1A8AF257156F4006A374D /* AcademyStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyStudents.swift; sourceTree = "<group>"; };
 		AE05E039258264000076E702 /* WebServiceLiveCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceLiveCode.swift; sourceTree = "<group>"; };
-		AE05E03D25826AE70076E702 /* AcademyStudentLiveCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyStudentLiveCode.swift; sourceTree = "<group>"; };
 		AEAF023F2580634000FEA77A /* StudentCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCellTableViewCell.swift; sourceTree = "<group>"; };
 		AEAF024225808CBA00FEA77A /* WebServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceTest.swift; sourceTree = "<group>"; };
 		AECFB6ED25803C9800847D6A /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				5EE1A8AF257156F4006A374D /* AcademyStudents.swift */,
-				AE05E03D25826AE70076E702 /* AcademyStudentLiveCode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,7 +188,6 @@
 				5EE1A89B25715621006A374D /* AppDelegate.swift in Sources */,
 				5EE1A8B0257156F4006A374D /* AcademyStudents.swift in Sources */,
 				AEAF02402580634000FEA77A /* StudentCellTableViewCell.swift in Sources */,
-				AE05E03E25826AE70076E702 /* AcademyStudentLiveCode.swift in Sources */,
 				AECFB6EE25803C9800847D6A /* WebService.swift in Sources */,
 				AE05E03A258264000076E702 /* WebServiceLiveCode.swift in Sources */,
 				AEAF024325808CBA00FEA77A /* WebServiceTest.swift in Sources */,

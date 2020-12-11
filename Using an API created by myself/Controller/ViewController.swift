@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableVIew: UITableView!
-    var academyStudents = [AcademyStudentLiveCode]()
+    var academyStudents = [AcademyStudents]()
     var webService = WebServiceLiveCode()
     
     override func viewDidLoad() {
