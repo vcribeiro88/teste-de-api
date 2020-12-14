@@ -58,7 +58,7 @@ class WebService {
         
         let uploadTask = URLSession.shared.uploadTask(with: request, from: jsonData) { (data, response, error) in
             // Verificando se tem erro, se tiver ele retorna false, senão ele continua com o programa
-            if let _ = error {
+            if error != nil {
                 completion(false)
                 return
             }
